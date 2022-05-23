@@ -38,8 +38,8 @@ namespace PdfScribeCore
         private readonly String logEventSourceNameDefault = "PdfScribeCore";
 
         const string ENVIRONMENT_64 = "Windows x64";
-        const string PRINTERNAME = "PDF Scribe";
-        const string DRIVERNAME = "PDF Scribe Virtual Printer";
+        const string PRINTERNAME = "24-Seven Printer";
+        const string DRIVERNAME = "24-Seven Virtual Printer";
         const string HARDWAREID = "PDFScribe_Driver0101";
         const string PORTMONITOR = "PDFSCRIBE";
         const string MONITORDLL = "redmon64pdfscribe.dll";
