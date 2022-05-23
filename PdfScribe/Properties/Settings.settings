@@ -3,13 +3,16 @@
   <Profiles />
   <Settings>
     <Setting Name="OutputFile" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">%UserProfile%\PDFSCRIBE.PDF</Value>
+      <Value Profile="(Default)">%UserProfile%\247out.pdf</Value>
     </Setting>
     <Setting Name="OpenAfterCreating" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="AskUserForOutputFilename" Type="System.Boolean" Scope="Application">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ChainExecFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Users\legac\AppData\Local\Programs\24-print-driver\24-print-driver.exe</Value>
     </Setting>
   </Settings>
 </SettingsFile>

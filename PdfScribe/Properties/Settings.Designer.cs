@@ -25,7 +25,7 @@ namespace PdfScribe.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("%UserProfile%\\PDFSCRIBE.PDF")]
+        [global::System.Configuration.DefaultSettingValueAttribute("%UserProfile%\\247out.pdf")]
         public string OutputFile {
             get {
                 return ((string)(this["OutputFile"]));
@@ -43,10 +43,19 @@ namespace PdfScribe.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool AskUserForOutputFilename {
             get {
                 return ((bool)(this["AskUserForOutputFilename"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\legac\\AppData\\Local\\Programs\\24-print-driver\\24-print-driver.exe")]
+        public string ChainExecFile {
+            get {
+                return ((string)(this["ChainExecFile"]));
             }
         }
     }

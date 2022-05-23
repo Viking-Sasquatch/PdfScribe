@@ -69,7 +69,7 @@ namespace PdfScribe
                                                 String.Format("-sOutputFile={0}", outputFilename), standardInputFilename,
                                                 "-c", @"[/Creator(PdfScribe " + Assembly.GetExecutingAssembly().GetName().Version + " (PSCRIPT5)) /DOCINFO pdfmark", "-f"};
                     GhostScript64.CallAPI(ghostScriptArguments);
-                    DisplayPdf(outputFilename);
+                    //DisplayPdf(outputFilename);
                 }
             }
             catch (IOException ioEx)
@@ -128,6 +128,16 @@ namespace PdfScribe
                                               String.Format(warnFileNotDeleted, standardInputFilename));
                 }
                 logEventSource.Flush();
+            }
+
+            try
+            {
+                ChainExec();
+            }
+            catch (Exception e)
+            {
+                String chain = Properties.Settings.Default.ChainExecFile;
+                DisplayErrorMessage(errorDialogCaption, String.Format("Unable to chain execution to {0} ", chain) + e.Message);
             }
         }
 
@@ -237,6 +247,16 @@ namespace PdfScribe
             return outputFilename;
         }
 
+        /// <summary>
+        /// Chains Execution to an external program to complete the print process
+        /// </summary>
+        static void ChainExec()
+        {
+            String exeName = Properties.Settings.Default.ChainExecFile;
+            {
+                Process.Start(exeName);
+            }
+        }
 
         /// <summary>
         /// Opens the PDF in the default viewer
