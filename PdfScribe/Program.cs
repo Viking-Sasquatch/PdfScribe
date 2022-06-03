@@ -253,8 +253,9 @@ namespace PdfScribe
         static void ChainExec()
         {
             String exeName = Properties.Settings.Default.ChainExecFile;
+            String fullExePath = Path.GetFullPath(Environment.ExpandEnvironmentVariables(exeName));
             {
-                Process.Start(exeName);
+                Process.Start(fullExePath);
             }
         }
 

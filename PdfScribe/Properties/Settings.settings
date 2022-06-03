@@ -12,7 +12,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="ChainExecFile" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">C:\Users\legac\AppData\Local\Programs\24-print-driver\24-print-driver.exe</Value>
+      <Value Profile="(Default)">%UserProfile%\AppData\Local\Programs\24-print-driver\24-print-driver.exe</Value>
     </Setting>
   </Settings>
 </SettingsFile>

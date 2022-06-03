@@ -52,7 +52,7 @@ namespace PdfScribe.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\legac\\AppData\\Local\\Programs\\24-print-driver\\24-print-driver.exe")]
+        [global::System.Configuration.DefaultSettingValueAttribute("%UserProfile%\\AppData\\Local\\Programs\\24-print-driver\\24-print-driver.exe")]
         public string ChainExecFile {
             get {
                 return ((string)(this["ChainExecFile"]));
